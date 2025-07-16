@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code With me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="ChatGPT Image Jul 14, 2025, 07_43_23 PM.png" type="image/x-icon">
+    <style>
+        * {
+            font-family: Poppins, sans-serif;
+
+        }
+
+        body {
+            padding-top: 90px;
+        }
+
+
+
+        #footer {
+            padding: 20px 0;
+            color: #333;
+        }
+
+        .nav-item a:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+            columns: #333;
+        }
+
+        .navbar {
+            padding: 5px 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        #navbar-logo {
+            height: 70px;
+            width: 80px;
+            background-color: #f8f9fa;
+            margin-right: 8px;
+            object-fit: contain;
+
+
+            padding: 2px;
+        }
+
+        #navbar-logo:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .card {
+            border-radius: 3px;
+            box-shadow: 0px 1px 3px black;
+        }
+
+        .card img {
+            height: 260px;
+            border-radius: 3px;
+        }
+
+        .card:hover {
+            box-shadow: 0px 1px 3px blue;
+            transform: scale(1.04);
+            transition: transform 0.3s ease-in-out
+        }
+        a{
+            text-decoration: none;
+        }
+        #footer a{
+            color: black;
+        }
+        #footer i{
+            color: blue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <datalist id="courses-list">
+        <option value="Python Course">
+        <option value=".NET Development">
+        <option value="Java Development">
+        <option value="Cyber Security">
+        <option value="DevOps Training">
+        <option value="Data Science">
+        <option value="Web Development">
+        <option value="AI & Machine Learning">
+    </datalist>
+
+    <div class="container-fluid">
+        <!-- navbar -->
+        <div class="row fixed-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img id="navbar-logo" src="ChatGPT Image Jul 14, 2025, 07_43_23 PM.png" alt="Logo">
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="my_courses.html">My Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login/Register</a>
+                            </li>
+
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" list="courses-list"
+                                placeholder="Search Courses" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Main Section -->
+
+        <div class="row mt-5">
+            <div class="col-10 mx-auto">
+                <h3 class="text-center" style="text-shadow: 0px 1px 2px black;">My Course progress</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="java.jpg" class="img-fluid rounded-start" alt="Java">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Java Programming</h5>
+                                        <p class="card-text">Learn object-oriented programming, basic to advanced Java
+                                            concepts, and backend development foundations.</p>
+                                        <div class="progress" role="progressbar" aria-label="Java Progress"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 50%">50%</div>
+                                        </div>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 2 days
+                                                ago</small></p>
+                                        <p class="text-end"><button type="button" class="btn btn-primary"><a
+                                                    href="course_progess_page.html"
+                                                    style="color: white; text-decoration: none;">Continue
+                                                    Learning</a></button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 mx-auto">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="python.png" class="img-fluid rounded-start" alt="Python">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Python Programming</h5>
+                                        <p class="card-text">Master Python basics, data structures, OOP, file handling,
+                                            and automation scripting.
+                                        </p><br>
+                                        <div class="progress" role="progressbar" aria-label="Python Progress"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 70%">70%</div>
+                                        </div>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 1 week
+                                                ago</small></p>
+                                        <p class="text-end"><button type="button" class="btn btn-primary"><a
+                                                    href="course_progess_page.html"
+                                                    style="color: white; text-decoration: none;">Continue
+                                                    Learning</a></button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mx-auto">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="data.webp" class="img-fluid rounded-start" alt="Data Science">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Data Science</h5>
+                                        <p class="card-text">Learn data analysis, statistics, Python for data science,
+                                            and machine learning with practical projects.</p>
+                                        <div class="progress" role="progressbar" aria-label="Data Science Progress"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 30%">30%</div>
+                                        </div>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 1 day
+                                                ago</small></p>
+                                        <p class="text-end"><button type="button" class="btn btn-primary"><a
+                                                    href="course_progess_page.html"
+                                                    style="color: white; text-decoration: none;">Continue
+                                                    Learning</a></button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 mx-auto">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="full_stak.avif" class="img-fluid rounded-start"
+                                        alt="Full Stack Development">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Full Stack Development</h5>
+                                        <p class="card-text">Master frontend and backend technologies including HTML,
+                                            CSS, JS, Node.js, Express, and databases for web development.</p>
+                                        <div class="progress" role="progressbar" aria-label="Full Stack Progress"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 20%">20%</div>
+                                        </div>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 2 days
+                                                ago</small></p>
+                                        <p class="text-end"><button type="button" class="btn btn-primary"><a
+                                                    href="course_progess_page.html"
+                                                    style="color: white; text-decoration: none;">Continue
+                                                    Learning</a></button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- end of main -->
+        <!-- footer -->
+        <hr>
+        <div class="row" id="footer" style="background-color: rgb(241, 248, 248);">
+            <div class="col-4">
+                <h6>Address</h6>
+                <p>
+                    123 Main Street<br>
+                    City, State, 12345<br>
+                    Country
+                </p>
+            </div>
+            <div class="col-4">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+
+                <h6>Social Media</h6>
+                <p class="mb-2">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="bi bi-twitter"></i> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

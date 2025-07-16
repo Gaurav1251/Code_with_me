@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code With me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="ChatGPT Image Jul 14, 2025, 07_43_23 PM.png" type="image/x-icon">
+    <style>
+        * {
+            font-family: Poppins, sans-serif;
+
+        }
+
+        body {
+            padding-top: 97px;
+        }
+
+
+
+        #footer {
+            padding: 20px 0;
+            color: #333;
+        }
+
+        .nav-item a:hover {
+            transform: scale(1.15);
+            transition: transform 0.3s ease-in-out;
+            columns: #333;
+        }
+
+        .navbar {
+            padding: 5px 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        #navbar-logo {
+            height: 70px;
+            width: 80px;
+            background-color: #f8f9fa;
+            margin-right: 8px;
+            object-fit: contain;
+
+
+            padding: 2px;
+        }
+
+        #navbar-logo:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+        }
+
+        .card img {
+            height: 46vh;
+            width: 100%;
+            border-radius: 4px;
+
+
+        }
+
+        .card {
+            border-radius: 4px;
+            background-color: #ffffffcc;
+            box-shadow: 0 2px 19px rgba(5, 5, 5, 0.1);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        #main {
+
+            background-color: #f8f9fa;
+        }
+        a{
+            text-decoration: none;
+        }
+        #footer a{
+            color: black;
+        }
+        #footer i{
+            color: blue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <datalist id="courses-list">
+        <option value="Python Course">
+        <option value=".NET Development">
+        <option value="Java Development">
+        <option value="Cyber Security">
+        <option value="DevOps Training">
+        <option value="Data Science">
+        <option value="Web Development">
+        <option value="AI & Machine Learning">
+    </datalist>
+
+    <div class="container-fluid">
+        <!-- navbar -->
+        <div class="row fixed-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img id="navbar-logo" src="ChatGPT Image Jul 14, 2025, 07_43_23 PM.png" alt="Logo">
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="my_courses.html">My Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login/Register</a>
+                            </li>
+
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" list="courses-list"
+                                placeholder="Search Courses" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Main Section -->
+
+        <div class="row">
+            <div class="col-12 mx-auto mb-5" style="background-color: rgb(255, 255, 255);">
+
+                <h3 class="text-center pt-2" style="text-shadow: 0px 1px 2px rgb(6, 6, 75);">Python Programming –
+                    Complete Course & Projects</h3>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-8 mx-auto" id="course_details">
+
+                        <div class="col-7 mx-auto">
+                            <div class="card" style="width: 100%;">
+                                <img src="python.png" class="card-img-top" alt="python">
+                                <div class="card-body">
+                                    <div class="accordion" id="accordionJava">
+
+
+                                        <div class="accordion" id="accordionPython">
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#pythonIntro"
+                                                        aria-expanded="true" aria-controls="pythonIntro">
+                                                        Introduction
+                                                    </button>
+                                                </h2>
+                                                <div id="pythonIntro" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionPython">
+                                                    <div class="accordion-body">
+                                                        Understand Python as an easy-to-learn, powerful programming
+                                                        language used in web development, data science, AI, and
+                                                        automation. Learn how to install Python and set up your
+                                                        development environment.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#pythonBasics"
+                                                        aria-expanded="false" aria-controls="pythonBasics">
+                                                        Python Basics
+                                                    </button>
+                                                </h2>
+                                                <div id="pythonBasics" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionPython">
+                                                    <div class="accordion-body">
+                                                        Learn variables, data types, operators, input/output, and
+                                                        control flow with if-else and loops to build a strong foundation
+                                                        in Python programming.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#pythonDS"
+                                                        aria-expanded="false" aria-controls="pythonDS">
+                                                        Data Structures
+                                                    </button>
+                                                </h2>
+                                                <div id="pythonDS" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionPython">
+                                                    <div class="accordion-body">
+                                                        Work with lists, tuples, sets, and dictionaries. Learn to
+                                                        manipulate collections and apply built-in functions for
+                                                        efficient data handling.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#pythonOOP"
+                                                        aria-expanded="false" aria-controls="pythonOOP">
+                                                        OOP & Modules
+                                                    </button>
+                                                </h2>
+                                                <div id="pythonOOP" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionPython">
+                                                    <div class="accordion-body">
+                                                        Master Object-Oriented Programming in Python. Create classes,
+                                                        objects, inheritance, and modules to build reusable,
+                                                        maintainable code.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#pythonProject"
+                                                        aria-expanded="false" aria-controls="pythonProject">
+                                                        Final Project
+                                                    </button>
+                                                </h2>
+                                                <div id="pythonProject" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionPython">
+                                                    <div class="accordion-body">
+                                                        Develop a Python project such as a basic web scraper, expense
+                                                        tracker, or simple game to practice all concepts and showcase
+                                                        your skills.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <p class="text-center mt-4"> <button class="btn btn-primary"
+                                                onclick="alert('Course Added SuccessFully to My Course Section')">Buy
+                                                Course</button></p>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <!-- end of main -->
+            <!-- footer -->
+            <hr>
+            <div class="row" id="footer" style="background-color: rgb(241, 248, 248);">
+                <div class="col-4">
+                    <h6>Address</h6>
+                    <p>
+                        123 Main Street<br>
+                        City, State, 12345<br>
+                        Country
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+
+                    <h6>Social Media</h6>
+                    <p class="mb-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

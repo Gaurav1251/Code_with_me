@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code With me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="ChatGPT Image Jul 14, 2025, 07_43_23 PM.png" type="image/x-icon">
+    <style>
+        * {
+            font-family: Poppins, sans-serif;
+
+        }
+        body{
+            padding-top: 115px;
+            
+        }
+
+        .carousel-img {
+
+            object-fit: contain;
+        }
+
+        .carousel-caption {
+            color: rgb(9, 9, 9);
+        }
+
+        .carousel {
+            padding: 0;
+            background-color: #f8f9fa;
+
+        }
+
+        #footer {
+            padding: 20px 0;
+            color: #333;
+        }
+
+        .nav-item a:hover {
+            transform: scale(1.15);
+            columns: #333;
+        }
+
+        .navbar {
+            padding: 5px 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card>img {
+            width: 100%;
+            height: 200px;
+            object-fit: fill;
+        }
+
+        .card {
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        #courses-section {
+            background-color: #f8f9fa;
+        }
+
+        @media screen and (min-width: 768px) {
+            #choose_us {
+                border: none;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            #choose_us {
+                border-right: none !important;
+            }
+            
+        }
+
+        #choose_us li:hover {
+            color: #050505;
+            font-weight: bold;
+            text-decoration: solid;
+
+        }
+
+        #choose_us_section {
+            background-color: #f8f9fa;
+        }
+
+        #navbar-logo {
+            height: 70px;
+            width: 80px;
+            background-color: #f8f9fa;
+            margin-right: 8px;
+            object-fit: contain;
+            
+            
+            padding: 2px;
+        }
+        #navbar-logo:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        a{
+            text-decoration: none;
+        }
+        #footer a{
+            color: black;
+        }
+        #footer i{
+            color: blue;
+        }
+        
+    </style>
+</head>
+
+<body>
+<datalist id="courses-list">
+        <option value="Python Course">
+        <option value=".NET Development">
+        <option value="Java Development">
+        <option value="Cyber Security">
+        <option value="DevOps Training">
+        <option value="Data Science">
+        <option value="Web Development">
+        <option value="AI & Machine Learning">
+    </datalist>
+
+    <div class="container-fluid">
+        <!-- navbar -->
+        <div class="row fixed-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img id="navbar-logo" src="ChatGPT Image Jul 14, 2025, 07_43_23 PM.png" alt="Logo">
+                        
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="my_courses.html">My Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login/Register</a>
+                            </li>
+
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" list="courses-list" placeholder="Search Courses"
+                                aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <marquee behavior="" direction="" scrollamount="15"><h3>Learn from Industry Experts | Flexible Learning | Certified Courses | Join Our Community Today!</h3></marquee>
+        <!-- Main Section -->
+        <div class="row" style="padding: 0 0;margin: 0 0;">
+            <div class="col-12 mb-2 mt-1">
+                <div id="mainCarousel" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                        </button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+                        </button>
+                    </div>
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+                                class="d-block w-100" style="max-height:500px; object-fit:cover;"
+                                alt="Group Coding Class">
+                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 rounded p-3">
+                                <h5 class="fw-bold">Learn Coding Together</h5>
+                                <p>Collaborate and grow with peers in live coding sessions.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80"
+                                class="d-block w-100" style="max-height:520px; object-fit:cover;"
+                                alt="Online Coding Course">
+                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 rounded p-3">
+                                <h5 class="fw-bold">Interactive Online Courses</h5>
+                                <p>Access structured lessons and hands-on projects from anywhere.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="coding.png" class="d-block w-100" style="max-height:500px; object-fit:cover;"
+                                alt="Teacher Explaining Code">
+                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 rounded p-3">
+                                <h5 class="fw-bold">Expert Coaching</h5>
+                                <p>Get guidance from experienced instructors and mentors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- some Courses -->
+
+        <div class="row mb-5" id="courses-section">
+            <div class="col-10 mx-auto">
+                <div class="row">
+                    <h3 class="text-center">Some Popular Courses</h3>
+                    <div class="col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="java.jpg" class="card-img-top" alt="Java Programming">
+                            <div class="card-body">
+                                <h5 class="card-title">Java Programming</h5>
+                                <p class="card-text">Master object-oriented programming and build robust applications
+                                    with Java.</p>
+                                <a href="#" class="btn btn-primary">Course Details</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="DevOps.jpg" class="card-img-top" alt="DevOps">
+                            <div class="card-body">
+                                <h5 class="card-title">DevOps</h5>
+                                <p class="card-text">Learn automation, CI/CD, and cloud deployment for modern software
+                                    delivery.</p>
+                                <a href="#" class="btn btn-primary">Course Details</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="data_scinec.webp" class="card-img-top" alt="Data Science">
+                            <div class="card-body">
+                                <h5 class="card-title">Data Science</h5>
+                                <p class="card-text">Analyze data, build models, and uncover insights using Python and
+                                    ML tools.</p>
+                                <a href="#" class="btn btn-primary">Course Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- why choose us -->
+        <hr>
+        <div class="row" id="choose_us_section">
+            <div class="col-10 mx-auto">
+                <h4 class="text-center mb-3">Why Choose Us?</h4>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-1 mx-auto" id="choose_us" style="border-right:1px solid #333;">
+                        <ul type="disc mb-1">
+                            <li>Experienced Instructors</li>
+                            <li>Interactive Learning</li>
+                            <li>Flexible Schedule</li>
+                            <li>Community Support</li>
+                            <li>Industry-Relevant Curriculum</li>
+                            <li>Project-Based Training</li>
+                            <li>Career Guidance & Placement Assistance</li>
+                            <li>Affordable Pricing</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 mb-1 mx-auto">
+                        <div class="card" style="width: 19rem;object-fit: contain;">
+                            <img src="choose_us.jpg" class="card-img-top" alt="Why Choose Us" style="height: auto;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- end of main -->
+        <!-- footer -->
+         <hr>
+        <div class="row" id="footer" style="background-color: rgb(241, 248, 248);">
+            <div class="col-4">
+                <h6>Address</h6>
+                <p>
+                    123 Main Street<br>
+                    City, State, 12345<br>
+                    Country
+                </p>
+            </div>
+            <div class="col-4">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+
+                <h6>Social Media</h6>
+                <p class="mb-2">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="bi bi-twitter"></i> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
